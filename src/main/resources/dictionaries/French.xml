@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+	<version>1.0</version>
+	<locales>
+		<locale>fr</locale>
+		<locale>fr-FR</locale>
+		<locale>fr-CA</locale>
+	</locales>
+	<messages>
+		<message>
+			<code>VOCAL_CLIENT__STARTING</code>
+			<value>Démarrage de Vocal client command line</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__STOPPING</code>
+			<value>Arrêt de Vocal client command line</value>
+		</message>
+	</messages>
+</dictionary>
