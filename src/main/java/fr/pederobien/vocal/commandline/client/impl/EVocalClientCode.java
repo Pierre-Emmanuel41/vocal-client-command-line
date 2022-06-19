@@ -1,4 +1,4 @@
-package fr.pederobien.vocal.commandline.client;
+package fr.pederobien.vocal.commandline.client.impl;
 
 import fr.pederobien.commandline.ICode;
 

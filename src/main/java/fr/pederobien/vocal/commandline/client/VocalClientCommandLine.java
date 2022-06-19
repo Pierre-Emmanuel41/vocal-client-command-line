@@ -9,6 +9,7 @@ import fr.pederobien.communication.event.ConnectionEvent;
 import fr.pederobien.dictionary.event.DictionaryEvent;
 import fr.pederobien.sound.event.SoundEvent;
 import fr.pederobien.utils.event.EventLogger;
+import fr.pederobien.vocal.commandline.client.impl.EVocalClientCode;
 
 public class VocalClientCommandLine {
 	private static final String DEV_DICTIONARY_FOLDER = "src/main/resources/dictionaries/";
