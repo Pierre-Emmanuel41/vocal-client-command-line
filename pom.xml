@@ -65,7 +65,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>fr.pederobien.vocal.commandline.client.VocalCommandLine</mainClass>
+							<mainClass>fr.pederobien.vocal.commandline.client.VocalClientCommandLine</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
