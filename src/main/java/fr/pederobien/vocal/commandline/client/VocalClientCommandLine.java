@@ -10,7 +10,7 @@ import fr.pederobien.dictionary.event.DictionaryEvent;
 import fr.pederobien.sound.event.SoundEvent;
 import fr.pederobien.utils.event.EventLogger;
 
-public class VocalCommandLine {
+public class VocalClientCommandLine {
 	private static final String DEV_DICTIONARY_FOLDER = "src/main/resources/dictionaries/";
 	private static final String PROD_DICTIONARY_FOLDER = "resources/dictionaries/vocal/client/";
 	private static CommandLine commandLine;
