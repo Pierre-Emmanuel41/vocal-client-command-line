@@ -25,14 +25,14 @@ public class VocalClientCommandLine {
 			return true;
 		});
 
-		builder.onStart(root -> {
+		builder.onStart((root, arguments) -> {
 			commandLine.send(EVocalClientCode.VOCAL_CLIENT__STARTING);
 			return true;
 		});
 
 		builder.onStop(root -> commandLine.send(EVocalClientCode.VOCAL_CLIENT__STOPPING));
 
-		commandLine = builder.build(new CommandRootNode<ICode>("root", EVocalClientCode.VOCAL_CLIENT__ROOT__EXPLANATION, () -> true));
+		commandLine = builder.build(new CommandRootNode<ICode>("root", EVocalClientCode.VOCAL_CLIENT__ROOT__EXPLANATION, () -> true), args);
 		commandLine.start();
 	}
 }
