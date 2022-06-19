@@ -18,5 +18,61 @@
 			<code>VOCAL_CLIENT__STOPPING</code>
 			<value>Stopping Vocal client command line</value>
 		</message>
+		<message>
+			<code>VOCAL_CLIENT__NAME__COMPLETION</code>
+			<value>&lt;name&gt;</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__ADDRESS_COMPLETION</code>
+			<value>&lt;IP address&gt;</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__PORT_COMPLETION</code>
+			<value>&lt;port&gt;</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__REQUEST_FAILED</code>
+			<value>Request failed (message : %s)</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__ROOT__EXPLANATION</code>
+			<value>The command to send requests to a vocal server</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__EXPLANATION</code>
+			<value>Connect this vocal client to a vocal server</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__ADDRESS_IS_MISSING</code>
+			<value>Cannot connect to the remote, the IP address is missing</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__ADDRESS_NOT_FOUND</code>
+			<value>Cannot connect to the remote, no IP address could be found for %s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__PORT_NUMBER_IS_MISSING</code>
+			<value>Cannot connect to the remote, the port number is missing</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__PORT_NUMBER_BAD_FORMAT</code>
+			<value>Cannot connect to the remote, the port number %s should be an integer</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__PORT_NUMBER_BAD_RANGE</code>
+			<value>Cannot connect to the remote, the port number %s should be in range [0,65535]</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__ATTEMPTING_CONNECTION</code>
+			<value>Attempting connection to %s:%s ...</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__CONNECTION_COMPLETE</code>
+			<value>Client connected to %s:%s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__CONNECTION_ABORT</code>
+			<value>Fail to connect to %s:%s ...</value>
+		</message>
 	</messages>
 </dictionary>

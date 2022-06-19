@@ -15,5 +15,61 @@
 			<code>VOCAL_CLIENT__STOPPING</code>
 			<value>Arrêt de Vocal client command line</value>
 		</message>
+		<message>
+			<code>VOCAL_CLIENT__NAME__COMPLETION</code>
+			<value>&lt;nom&gt;</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__ADDRESS_COMPLETION</code>
+			<value>&lt;adresse IP&gt;</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__PORT_COMPLETION</code>
+			<value>&lt;port&gt;</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__REQUEST_FAILED</code>
+			<value>La requête a échoué (message : %s)</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__ROOT__EXPLANATION</code>
+			<value>La commande pour envoyer des requêtes à un serveur vocal</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__EXPLANATION</code>
+			<value>Connecte ce client vocal à un serveur vocal</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__ADDRESS_IS_MISSING</code>
+			<value>Impossible de se connecter au serveur, l'adresse IP est manquante</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__ADDRESS_NOT_FOUND</code>
+			<value>Impossible de se connecter au serveur, aucune adresse IP n'a été trouvé pour %s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__PORT_NUMBER_IS_MISSING</code>
+			<value>Impossible de se connecter au serveur, Le numéro de port est manquant</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__PORT_NUMBER_BAD_FORMAT</code>
+			<value>Impossible de se connecter au serveur, le numéro de port %s doit être un entier</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__PORT_NUMBER_BAD_RANGE</code>
+			<value>Impossible de se connecter au serveur, le numéro de port %s doit être dans l'intervalle [0,65535]</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__ATTEMPTING_CONNECTION</code>
+			<value>Tentative de connexion à %s:%s ...</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__CONNECTION_COMPLETE</code>
+			<value>Client connecté à %s:%s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__CONNECT__CONNECTION_ABORT</code>
+			<value>La connexion avec %s:%s a échoué ...</value>
+		</message>
 	</messages>
 </dictionary>

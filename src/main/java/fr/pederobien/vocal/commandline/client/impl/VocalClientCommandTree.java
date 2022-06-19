@@ -15,6 +15,7 @@ import fr.pederobien.vocal.client.interfaces.IVocalServer;
 public class VocalClientCommandTree {
 	private IVocalServer server;
 	private ICommandRootNode<ICode> root;
+	private ConnectNode connectNode;
 
 	public VocalClientCommandTree() {
 		Consumer<INode<ICode>> displayer = node -> {
@@ -24,6 +25,7 @@ public class VocalClientCommandTree {
 		};
 
 		root = new CommandRootNode<ICode>("vocal", EVocalClientCode.VOCAL_CLIENT__ROOT__EXPLANATION, () -> true, displayer);
+		root.add(connectNode = new ConnectNode(this));
 	}
 
 	/**
@@ -34,9 +36,25 @@ public class VocalClientCommandTree {
 	}
 
 	/**
+	 * Set the server managed by this command tree.
+	 * 
+	 * @param server The new server managed by this command tree.
+	 */
+	public void setServer(IVocalServer server) {
+		this.server = server;
+	}
+
+	/**
 	 * @return The root of this command tree.
 	 */
 	public ICommandRootNode<ICode> getRoot() {
 		return root;
+	}
+
+	/**
+	 * @return The node that connects a vocal client to a vocal server.
+	 */
+	public ConnectNode getConnectNode() {
+		return connectNode;
 	}
 }
