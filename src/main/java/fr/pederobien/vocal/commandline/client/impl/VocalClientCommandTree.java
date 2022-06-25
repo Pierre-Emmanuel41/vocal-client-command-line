@@ -16,6 +16,7 @@ public class VocalClientCommandTree {
 	private IVocalServer server;
 	private ICommandRootNode<ICode> root;
 	private ConnectNode connectNode;
+	private ServerJoinNode joinNode;
 
 	public VocalClientCommandTree() {
 		Consumer<INode<ICode>> displayer = node -> {
@@ -26,6 +27,7 @@ public class VocalClientCommandTree {
 
 		root = new CommandRootNode<ICode>("vocal", EVocalClientCode.VOCAL_CLIENT__ROOT__EXPLANATION, () -> true, displayer);
 		root.add(connectNode = new ConnectNode(this));
+		root.add(joinNode = new ServerJoinNode(() -> getServer()));
 	}
 
 	/**
@@ -56,5 +58,12 @@ public class VocalClientCommandTree {
 	 */
 	public ConnectNode getConnectNode() {
 		return connectNode;
+	}
+
+	/**
+	 * @return The node that lets a player joining a vocal server.
+	 */
+	public ServerJoinNode getJoinNode() {
+		return joinNode;
 	}
 }

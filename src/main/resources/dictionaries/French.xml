@@ -71,5 +71,25 @@
 			<code>VOCAL_CLIENT__CONNECT__CONNECTION_ABORT</code>
 			<value>La connexion avec %s:%s a échoué ...</value>
 		</message>
+		<message>
+			<code>VOCAL_CLIENT__JOIN__EXPLANATION</code>
+			<value>Pour permettre au joueur de rejoindre un serveur vocal</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__JOIN__PLAYER_NAME_IS_MISSING</code>
+			<value>Impossible de rejoindre un serveur vocal, le nom du joueur est manquant</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__JOIN__ATTEMPTING_TO_JOIN</code>
+			<value>Tentative de joindre %s ...</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__JOIN__REQUEST_SUCCEED</code>
+			<value>Le client a rejoint %s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__JOIN__REQUEST_ABORT</code>
+			<value>Le client a échoué à rejoindre %s ...</value>
+		</message>
 	</messages>
 </dictionary>

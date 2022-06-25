@@ -52,6 +52,21 @@ public enum EVocalClientCode implements ICode {
 	// Code when the connection with the remote failed
 	VOCAL_CLIENT__CONNECT__CONNECTION_ABORT,
 
+	// Code for the "vocal join" command ----------------------------------------
+	VOCAL_CLIENT__JOIN__EXPLANATION,
+
+	// Code when the player name is missing
+	VOCAL_CLIENT__JOIN__PLAYER_NAME_IS_MISSING,
+
+	// Code when trying to join the remote
+	VOCAL_CLIENT__JOIN__ATTEMPTING_TO_JOIN,
+
+	// Code when the player has joined the server
+	VOCAL_CLIENT__JOIN__REQUEST_SUCCEED,
+
+	// Code when the request failed
+	VOCAL_CLIENT__JOIN__REQUEST_ABORT,
+
 	;
 
 	@Override

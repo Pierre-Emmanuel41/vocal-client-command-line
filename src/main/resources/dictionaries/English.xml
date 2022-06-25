@@ -74,5 +74,25 @@
 			<code>VOCAL_CLIENT__CONNECT__CONNECTION_ABORT</code>
 			<value>Fail to connect to %s:%s ...</value>
 		</message>
+		<message>
+			<code>VOCAL_CLIENT__JOIN__EXPLANATION</code>
+			<value>To let the player joining a vocal server</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__JOIN__PLAYER_NAME_IS_MISSING</code>
+			<value>Fail to join a vocal server, the player name is missing</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__JOIN__ATTEMPTING_TO_JOIN</code>
+			<value>Attempting to join %s ...</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__JOIN__REQUEST_SUCCEED</code>
+			<value>Client joined %s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__JOIN__REQUEST_ABORT</code>
+			<value>Fail to join %s ...</value>
+		</message>
 	</messages>
 </dictionary>
