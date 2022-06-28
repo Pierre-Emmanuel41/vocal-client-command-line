@@ -17,6 +17,7 @@ public class VocalClientCommandTree {
 	private ICommandRootNode<ICode> root;
 	private ConnectNode connectNode;
 	private ServerJoinNode joinNode;
+	private ServerLeaveNode leaveNode;
 
 	public VocalClientCommandTree() {
 		Consumer<INode<ICode>> displayer = node -> {
@@ -28,6 +29,7 @@ public class VocalClientCommandTree {
 		root = new CommandRootNode<ICode>("vocal", EVocalClientCode.VOCAL_CLIENT__ROOT__EXPLANATION, () -> true, displayer);
 		root.add(connectNode = new ConnectNode(this));
 		root.add(joinNode = new ServerJoinNode(() -> getServer()));
+		root.add(leaveNode = new ServerLeaveNode(() -> getServer()));
 	}
 
 	/**
@@ -65,5 +67,12 @@ public class VocalClientCommandTree {
 	 */
 	public ServerJoinNode getJoinNode() {
 		return joinNode;
+	}
+
+	/**
+	 * @return The node that lets a player leaving a vocal server.
+	 */
+	public ServerLeaveNode getLeaveNode() {
+		return leaveNode;
 	}
 }

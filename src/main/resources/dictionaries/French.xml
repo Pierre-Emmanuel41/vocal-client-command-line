@@ -91,5 +91,17 @@
 			<code>VOCAL_CLIENT__JOIN__REQUEST_ABORT</code>
 			<value>Le client a échoué à rejoindre %s ...</value>
 		</message>
+		<message>
+			<code>VOCAL_CLIENT__LEAVE__EXPLANATION</code>
+			<value>Pour permettre au joueur de quitter un serveur vocal</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__LEAVE__ATTEMPTING_TO_LEAVE</code>
+			<value>Tentative de quitter %s ...</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__LEAVE__REQUEST_SUCCEED</code>
+			<value>%s a été quitté</value>
+		</message>
 	</messages>
 </dictionary>

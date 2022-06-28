@@ -94,5 +94,17 @@
 			<code>VOCAL_CLIENT__JOIN__REQUEST_ABORT</code>
 			<value>Fail to join %s ...</value>
 		</message>
+		<message>
+			<code>VOCAL_CLIENT__LEAVE__EXPLANATION</code>
+			<value>To let the player leaving a vocal server</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__LEAVE__ATTEMPTING_TO_LEAVE</code>
+			<value>Attempting to leave %s ...</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__LEAVE__REQUEST_SUCCEED</code>
+			<value>%s has been left</value>
+		</message>
 	</messages>
 </dictionary>

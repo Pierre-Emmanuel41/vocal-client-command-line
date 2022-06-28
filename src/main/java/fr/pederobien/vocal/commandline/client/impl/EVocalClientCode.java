@@ -67,6 +67,15 @@ public enum EVocalClientCode implements ICode {
 	// Code when the request failed
 	VOCAL_CLIENT__JOIN__REQUEST_ABORT,
 
+	// Code for the "vocal leave" command ---------------------------------------
+	VOCAL_CLIENT__LEAVE__EXPLANATION,
+
+	// Code when trying to leave the remote
+	VOCAL_CLIENT__LEAVE__ATTEMPTING_TO_LEAVE,
+
+	// Code when the player has left the server
+	VOCAL_CLIENT__LEAVE__REQUEST_SUCCEED,
+
 	;
 
 	@Override
