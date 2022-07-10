@@ -1,0 +1,27 @@
+package fr.pederobien.vocal.commandline.client.impl;
+
+import java.util.function.Supplier;
+
+import fr.pederobien.vocal.client.interfaces.IVocalServer;
+
+public class SetNode extends VocalClientNode {
+	private SetNameNode nameNode;
+
+	/**
+	 * Creates a node in order to modify the properties of the players.
+	 * 
+	 * @param server The server associated to this node.
+	 */
+	protected SetNode(Supplier<IVocalServer> server) {
+		super(server, "set", EVocalClientCode.VOCAL_CLIENT__SET__EXPLANATION, s -> s != null && s.isJoined());
+
+		add(nameNode = new SetNameNode(server));
+	}
+
+	/**
+	 * @return The node that updates the name of the server main player.
+	 */
+	public SetNameNode getNameNode() {
+		return nameNode;
+	}
+}

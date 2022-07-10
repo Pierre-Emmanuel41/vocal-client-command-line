@@ -18,6 +18,7 @@ public class VocalClientCommandTree {
 	private ConnectNode connectNode;
 	private ServerJoinNode joinNode;
 	private ServerLeaveNode leaveNode;
+	private SetNode setNode;
 
 	public VocalClientCommandTree() {
 		Consumer<INode<ICode>> displayer = node -> {
@@ -30,6 +31,7 @@ public class VocalClientCommandTree {
 		root.add(connectNode = new ConnectNode(this));
 		root.add(joinNode = new ServerJoinNode(() -> getServer()));
 		root.add(leaveNode = new ServerLeaveNode(() -> getServer()));
+		root.add(setNode = new SetNode(() -> getServer()));
 	}
 
 	/**
@@ -74,5 +76,12 @@ public class VocalClientCommandTree {
 	 */
 	public ServerLeaveNode getLeaveNode() {
 		return leaveNode;
+	}
+
+	/**
+	 * @return The node that modifies the properties of the players.
+	 */
+	public SetNode getSetNode() {
+		return setNode;
 	}
 }

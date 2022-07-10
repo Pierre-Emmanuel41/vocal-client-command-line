@@ -76,6 +76,21 @@ public enum EVocalClientCode implements ICode {
 	// Code when the player has left the server
 	VOCAL_CLIENT__LEAVE__REQUEST_SUCCEED,
 
+	// Code for the "vocal set" command -----------------------------------------
+	VOCAL_CLIENT__SET__EXPLANATION,
+
+	// Code for the "vocal set name" command ------------------------------------
+	VOCAL_CLIENT__SET__NAME__EXPLANATION,
+
+	// Code when the new player name is missing
+	VOCAL_CLIENT__SET__NAME__PLAYER_NAME_IS_MISSING,
+
+	// Code when the new player name is already used
+	VOCAL_CLIENT__SET__NAME__PLAYER_ALREADY_EXISTS,
+
+	// Code when the player name has been updated on the server
+	VOCAL_CLIENT__SET__NAME__REQUEST_SUCCEED,
+
 	;
 
 	@Override

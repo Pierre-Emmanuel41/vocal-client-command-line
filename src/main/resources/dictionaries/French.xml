@@ -103,5 +103,25 @@
 			<code>VOCAL_CLIENT__LEAVE__REQUEST_SUCCEED</code>
 			<value>%s a été quitté</value>
 		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__EXPLANATION</code>
+			<value>Pour modifier les propriétés des joueurs</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__NAME__EXPLANATION</code>
+			<value>Pour mettre à jour le nom du joueur principal du serveur</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__NAME__PLAYER_NAME_IS_MISSING</code>
+			<value>Impossible de mettre à jour le nom du joueur principal du serveur, le nouveau nom est manquant</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__NAME__PLAYER_ALREADY_EXISTS</code>
+			<value>Impossible de renommer %s en %s, le joueur existe déjà</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__NAME__REQUEST_SUCCEED</code>
+			<value>%s a été renommé %s</value>
+		</message>
 	</messages>
 </dictionary>
