@@ -123,5 +123,41 @@
 			<code>VOCAL_CLIENT__SET__NAME__REQUEST_SUCCEED</code>
 			<value>%s a été renommé %s</value>
 		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__EXPLANATION</code>
+			<value>Pour mettre à jour le status muet du joueur principal ou celui d'un joueur enregistré sur le serveur</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__PLAYER_NAME_OR_MUTE_STATUS_IS_MISSING</code>
+			<value>Impossible de mettre à jour le statut muet d'un joueur, le statut muet ou le nom du joueur est manquant</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__MUTED_REQUEST_SUCCEED</code>
+			<value>%s est désormais muet</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__UNMUTED_REQUEST_SUCCEED</code>
+			<value>%s n'est plus muet</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__PLAYER_NOT_FOUND</code>
+			<value>Impossible de mettre à jour le statut muet de %s, le joueur n'existe pas</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__MUTE_STATUS_IS_MISSING</code>
+			<value>Impossible de mettre à jour le status muet de %s, le statut muet est manquant</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__MUTE_STATUS_BAD_FORMAT</code>
+			<value>Impossible de mettre à jour le status muet de %s, the status muet doit être un booléen</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__PLAYER_MUTED_REQUEST_SUCCEED</code>
+			<value>%s est désormais muet pour %s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__PLAYER_UNMUTED_REQUEST_SUCCEED</code>
+			<value>%s n'est plus muet pour %s</value>
+		</message>
 	</messages>
 </dictionary>

@@ -6,6 +6,7 @@ import fr.pederobien.vocal.client.interfaces.IVocalServer;
 
 public class SetNode extends VocalClientNode {
 	private SetNameNode nameNode;
+	private SetMuteNode muteNode;
 
 	/**
 	 * Creates a node in order to modify the properties of the players.
@@ -16,6 +17,7 @@ public class SetNode extends VocalClientNode {
 		super(server, "set", EVocalClientCode.VOCAL_CLIENT__SET__EXPLANATION, s -> s != null && s.isJoined());
 
 		add(nameNode = new SetNameNode(server));
+		add(muteNode = new SetMuteNode(server));
 	}
 
 	/**
@@ -23,5 +25,12 @@ public class SetNode extends VocalClientNode {
 	 */
 	public SetNameNode getNameNode() {
 		return nameNode;
+	}
+
+	/**
+	 * @return The node that modifies the mute status of the main player and/or the mute status of players registered on a server.
+	 */
+	public SetMuteNode getMuteNode() {
+		return muteNode;
 	}
 }

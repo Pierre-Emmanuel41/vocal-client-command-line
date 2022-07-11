@@ -126,5 +126,41 @@
 			<code>VOCAL_CLIENT__SET__NAME__REQUEST_SUCCEED</code>
 			<value>%s has been renamed as %s</value>
 		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__EXPLANATION</code>
+			<value>To update the mute status of the main player or the mute status of a player registered on a server</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__PLAYER_NAME_OR_MUTE_STATUS_IS_MISSING</code>
+			<value>Cannot update the mute status of a player, the mute status or the player name is missing</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__MUTED_REQUEST_SUCCEED</code>
+			<value>%s is now muted</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__UNMUTED_REQUEST_SUCCEED</code>
+			<value>%s is no more muted</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__PLAYER_NOT_FOUND</code>
+			<value>Cannot update the mute status of %s, the player does not exist</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__MUTE_STATUS_IS_MISSING</code>
+			<value>Cannot update the mute status of %s, the mute status is missing</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__MUTE_STATUS_BAD_FORMAT</code>
+			<value>Cannot update the mute status of %s, the mute status should be a boolean</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__PLAYER_MUTED_REQUEST_SUCCEED</code>
+			<value>%s is now muted for %s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__MUTE__PLAYER_UNMUTED_REQUEST_SUCCEED</code>
+			<value>%s is no more muted for %s</value>
+		</message>
 	</messages>
 </dictionary>

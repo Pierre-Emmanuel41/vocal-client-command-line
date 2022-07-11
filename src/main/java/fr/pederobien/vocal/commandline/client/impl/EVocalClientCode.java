@@ -91,6 +91,36 @@ public enum EVocalClientCode implements ICode {
 	// Code when the player name has been updated on the server
 	VOCAL_CLIENT__SET__NAME__REQUEST_SUCCEED,
 
+	// Code for the "vocal set mute" command ------------------------------------
+	VOCAL_CLIENT__SET__MUTE__EXPLANATION,
+
+	// Code when the player is not registered in a channel
+	VOCAL_CLIENT__SET__MUTE__PLAYER_NOT_REGISTERED_IN_CHANNEL,
+
+	// Code when the player name is missing
+	VOCAL_CLIENT__SET__MUTE__PLAYER_NAME_OR_MUTE_STATUS_IS_MISSING,
+
+	// Code when the player is mute
+	VOCAL_CLIENT__SET__MUTE__MUTED_REQUEST_SUCCEED,
+
+	// Code when the player is unmute
+	VOCAL_CLIENT__SET__MUTE__UNMUTED_REQUEST_SUCCEED,
+
+	// Code when the player does not exist
+	VOCAL_CLIENT__SET__MUTE__PLAYER_NOT_FOUND,
+
+	// Code when the mute status is missing
+	VOCAL_CLIENT__SET__MUTE__MUTE_STATUS_IS_MISSING,
+
+	// Code when the mute status has a bad format
+	VOCAL_CLIENT__SET__MUTE__MUTE_STATUS_BAD_FORMAT,
+
+	// Code when another player is mute on the server
+	VOCAL_CLIENT__SET__MUTE__PLAYER_MUTED_REQUEST_SUCCEED,
+
+	// Code when another player is unmute on the server
+	VOCAL_CLIENT__SET__MUTE__PLAYER_UNMUTED_REQUEST_SUCCEED,
+
 	;
 
 	@Override
