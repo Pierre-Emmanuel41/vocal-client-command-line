@@ -72,6 +72,14 @@
 			<value>La connexion avec %s:%s a échoué ...</value>
 		</message>
 		<message>
+			<code>VOCAL_CLIENT__DISCONNECT__EXPLANATION</code>
+			<value>Pour annuler la connexion avec le server</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DISCONNECT__CONNECTION_ABORTED</code>
+			<value>La connexion avec %s:%s a été interrompue</value>
+		</message>
+		<message>
 			<code>VOCAL_CLIENT__JOIN__EXPLANATION</code>
 			<value>Pour permettre au joueur de rejoindre un serveur vocal</value>
 		</message>

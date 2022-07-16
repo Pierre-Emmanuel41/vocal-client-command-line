@@ -75,6 +75,14 @@
 			<value>Fail to connect to %s:%s ...</value>
 		</message>
 		<message>
+			<code>VOCAL_CLIENT__DISCONNECT__EXPLANATION</code>
+			<value>To abort the connection with the remote</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DISCONNECT__CONNECTION_ABORTED</code>
+			<value>The connection with %s:%s has been aborted</value>
+		</message>
+		<message>
 			<code>VOCAL_CLIENT__JOIN__EXPLANATION</code>
 			<value>To let the player joining a vocal server</value>
 		</message>

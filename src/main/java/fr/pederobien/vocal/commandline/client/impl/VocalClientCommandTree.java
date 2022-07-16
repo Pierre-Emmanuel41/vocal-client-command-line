@@ -16,6 +16,7 @@ public class VocalClientCommandTree {
 	private IVocalServer server;
 	private ICommandRootNode<ICode> root;
 	private ConnectNode connectNode;
+	private DisconnectNode disconnectNode;
 	private ServerJoinNode joinNode;
 	private ServerLeaveNode leaveNode;
 	private SetNode setNode;
@@ -29,6 +30,7 @@ public class VocalClientCommandTree {
 
 		root = new CommandRootNode<ICode>("vocal", EVocalClientCode.VOCAL_CLIENT__ROOT__EXPLANATION, () -> true, displayer);
 		root.add(connectNode = new ConnectNode(this));
+		root.add(disconnectNode = new DisconnectNode(this));
 		root.add(joinNode = new ServerJoinNode(() -> getServer()));
 		root.add(leaveNode = new ServerLeaveNode(() -> getServer()));
 		root.add(setNode = new SetNode(() -> getServer()));
@@ -62,6 +64,13 @@ public class VocalClientCommandTree {
 	 */
 	public ConnectNode getConnectNode() {
 		return connectNode;
+	}
+
+	/**
+	 * @return The node that aborts the connection with the remote.
+	 */
+	public DisconnectNode getDisconnectNode() {
+		return disconnectNode;
 	}
 
 	/**

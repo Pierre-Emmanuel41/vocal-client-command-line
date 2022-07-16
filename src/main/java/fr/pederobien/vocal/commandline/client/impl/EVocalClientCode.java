@@ -52,6 +52,12 @@ public enum EVocalClientCode implements ICode {
 	// Code when the connection with the remote failed
 	VOCAL_CLIENT__CONNECT__CONNECTION_ABORT,
 
+	// Code for the "vocal disconnect" command ----------------------------------
+	VOCAL_CLIENT__DISCONNECT__EXPLANATION,
+
+	// Code when the connection is aborted
+	VOCAL_CLIENT__DISCONNECT__CONNECTION_ABORTED,
+
 	// Code for the "vocal join" command ----------------------------------------
 	VOCAL_CLIENT__JOIN__EXPLANATION,
 
