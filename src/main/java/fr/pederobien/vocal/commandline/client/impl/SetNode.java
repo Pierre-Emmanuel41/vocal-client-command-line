@@ -7,6 +7,7 @@ import fr.pederobien.vocal.client.interfaces.IVocalServer;
 public class SetNode extends VocalClientNode {
 	private SetNameNode nameNode;
 	private SetMuteNode muteNode;
+	private SetDeafenNode deafenNode;
 
 	/**
 	 * Creates a node in order to modify the properties of the players.
@@ -18,6 +19,7 @@ public class SetNode extends VocalClientNode {
 
 		add(nameNode = new SetNameNode(server));
 		add(muteNode = new SetMuteNode(server));
+		add(deafenNode = new SetDeafenNode(server));
 	}
 
 	/**
@@ -32,5 +34,12 @@ public class SetNode extends VocalClientNode {
 	 */
 	public SetMuteNode getMuteNode() {
 		return muteNode;
+	}
+
+	/**
+	 * @return The node that modifies the deafen status of the main player.
+	 */
+	public SetDeafenNode getDeafenNode() {
+		return deafenNode;
 	}
 }

@@ -121,6 +121,21 @@ public enum EVocalClientCode implements ICode {
 	// Code when another player is unmute on the server
 	VOCAL_CLIENT__SET__MUTE__PLAYER_UNMUTED_REQUEST_SUCCEED,
 
+	// Code for the "vocal set deafen" command ----------------------------------
+	VOCAL_CLIENT__SET__DEAFEN__EXPLANATION,
+
+	// Code when the deafen status is missing
+	VOCAL_CLIENT__SET__DEAFEN__DEAFEN_STATUS_IS_MISSING,
+
+	// Code when the deafen status has a bad format
+	VOCAL_CLIENT__SET__DEAFEN__DEAFEN_STATUS_BAD_FORMAT,
+
+	// Code when the player is deafen
+	VOCAL_CLIENT__SET__DEAFEN__DEAFEN_REQUEST_SUCCEED,
+
+	// Code when the player is undeafen
+	VOCAL_CLIENT__SET__DEAFEN__UNDEAFEN_REQUEST_SUCCEED,
+
 	;
 
 	@Override

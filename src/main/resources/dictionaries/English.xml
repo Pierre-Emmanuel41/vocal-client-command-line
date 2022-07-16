@@ -162,5 +162,25 @@
 			<code>VOCAL_CLIENT__SET__MUTE__PLAYER_UNMUTED_REQUEST_SUCCEED</code>
 			<value>%s is no more muted for %s</value>
 		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__DEAFEN__EXPLANATION</code>
+			<value>To update the deafen status of the main player</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__DEAFEN__DEAFEN_STATUS_IS_MISSING</code>
+			<value>Cannot update the deafen status of %s, the deafen status is missing</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__DEAFEN__DEAFEN_STATUS_BAD_FORMAT</code>
+			<value>Cannot update the deafen status of %s, the deafen status should be a boolean</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__DEAFEN__DEAFEN_REQUEST_SUCCEED</code>
+			<value>%s is now deafen</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__DEAFEN__UNDEAFEN_REQUEST_SUCCEED</code>
+			<value>%s is no more deafen</value>
+		</message>
 	</messages>
 </dictionary>
