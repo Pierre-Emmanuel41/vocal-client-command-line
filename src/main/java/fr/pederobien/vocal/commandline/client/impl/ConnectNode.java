@@ -71,7 +71,7 @@ public class ConnectNode extends VocalClientNode {
 		}
 
 		try {
-			IVocalServer server = new VocalServer("Vocal_Server", new InetSocketAddress(ipAddress, port));
+			IVocalServer server = new VocalServer("Server", new InetSocketAddress(ipAddress, port));
 			send(EVocalClientCode.VOCAL_CLIENT__CONNECT__ATTEMPTING_CONNECTION, ipAddress, port);
 			server.open();
 			send(EVocalClientCode.VOCAL_CLIENT__CONNECT__CONNECTION_COMPLETE, ipAddress, port);
