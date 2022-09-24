@@ -7,6 +7,9 @@ public enum EVocalClientCode implements ICode {
 	// Starting application ------------------------------------------------------
 	VOCAL_CLIENT__STARTING,
 
+	// Code when the arguments are ignored
+	VOCAL_CLIENT__STARTING__IGNORING_ARGUMENTS__NOT_ENOUGH_ARGUMENT,
+
 	// Stopping application ------------------------------------------------------
 	VOCAL_CLIENT__STOPPING,
 

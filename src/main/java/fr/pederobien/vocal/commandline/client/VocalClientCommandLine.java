@@ -34,6 +34,20 @@ public class VocalClientCommandLine {
 
 		builder.onStart((root, arguments) -> {
 			commandLine.send(EVocalClientCode.VOCAL_CLIENT__STARTING);
+			if (arguments.length == 0)
+				return true;
+
+			if (arguments.length < 2) {
+				commandLine.send(EVocalClientCode.VOCAL_CLIENT__STARTING__IGNORING_ARGUMENTS__NOT_ENOUGH_ARGUMENT);
+				return true;
+			}
+
+			String[] commands = new String[arguments.length + 1];
+			commands[0] = "connect";
+			for (int i = 0; i < arguments.length; i++)
+				commands[i + 1] = arguments[i];
+
+			root.onCommand(commands);
 			return true;
 		});
 
