@@ -37,7 +37,11 @@ public class VocalClientCommandLine {
 			return true;
 		});
 
-		builder.onStop(root -> commandLine.send(EVocalClientCode.VOCAL_CLIENT__STOPPING));
+		builder.onStop(root -> {
+			if (tree.getServer() != null)
+				tree.getServer().close();
+			commandLine.send(EVocalClientCode.VOCAL_CLIENT__STOPPING);
+		});
 
 		commandLine = builder.build(tree.getRoot(), args);
 		commandLine.start();
