@@ -194,5 +194,73 @@
 			<code>VOCAL_CLIENT__SET__DEAFEN__UNDEAFEN_REQUEST_SUCCEED</code>
 			<value>%s is no more deafen</value>
 		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__EXPLANATION</code>
+			<value>To display the characteristics of a vocal server</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__SERVER_NAME</code>
+			<value>Name: %s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__SERVER_IP_ADDRESS</code>
+			<value>IP address: %s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__SERVER_REACHABLE</code>
+			<value>Reachable</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__SERVER_NOT_REACHABLE</code>
+			<value>Not reachable</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__SERVER_REACHABLE_STATUS</code>
+			<value>Reachable status: %s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__MAIN_PLAYER</code>
+			<value>Main player: %s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__PLAYER_NAME</code>
+			<value>Name: %s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__PLAYER_MUTE</code>
+			<value>Mute</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__PLAYER_NOT_MUTE</code>
+			<value>Not mute</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__PLAYER_MUTE_STATUS</code>
+			<value>Mute status: %s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__PLAYER_DEAFEN</code>
+			<value>Deafen</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__PLAYER_NOT_DEAFEN</code>
+			<value>Not deafen</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__PLAYER_DEAFEN_STATUS</code>
+			<value>Deafen status: %s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__SECONDARY_PLAYERS</code>
+			<value>Secondary players:</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__SECONDARY_PLAYER_NAME</code>
+			<value>Name: %s</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__DETAILS__SERVER</code>
+			<value>Server configuration:%n%s</value>
+		</message>
 	</messages>
 </dictionary>

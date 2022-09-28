@@ -20,6 +20,7 @@ public class VocalClientCommandTree {
 	private ServerJoinNode joinNode;
 	private ServerLeaveNode leaveNode;
 	private SetNode setNode;
+	private DetailsNode detailsNode;
 
 	public VocalClientCommandTree() {
 		Consumer<INode<ICode>> displayer = node -> {
@@ -34,6 +35,7 @@ public class VocalClientCommandTree {
 		root.add(joinNode = new ServerJoinNode(() -> getServer()));
 		root.add(leaveNode = new ServerLeaveNode(() -> getServer()));
 		root.add(setNode = new SetNode(() -> getServer()));
+		root.add(detailsNode = new DetailsNode(() -> getServer()));
 	}
 
 	/**
@@ -92,5 +94,12 @@ public class VocalClientCommandTree {
 	 */
 	public SetNode getSetNode() {
 		return setNode;
+	}
+
+	/**
+	 * @return The node that display the characteristics of a vocal server.
+	 */
+	public DetailsNode getDetailsNode() {
+		return detailsNode;
 	}
 }
