@@ -22,6 +22,9 @@ public enum EVocalClientCode implements ICode {
 	// Code for the port number completion
 	VOCAL_CLIENT__PORT_COMPLETION,
 
+	// Code for the volume completion
+	VOCAL_CLIENT__VOLUME_COMPLETION,
+
 	// Code when the server returns a fail code
 	VOCAL_CLIENT__REQUEST_FAILED,
 
@@ -144,6 +147,27 @@ public enum EVocalClientCode implements ICode {
 
 	// Code when the player is undeafen
 	VOCAL_CLIENT__SET__DEAFEN__UNDEAFEN_REQUEST_SUCCEED,
+
+	// Code for the "vocal set volume" command ----------------------------------------------------
+	VOCAL_CLIENT__SET__VOLUME__EXPLANATION,
+
+	// Code when the player name is missing
+	VOCAL_CLIENT__SET__VOLUME__NAME_IS_MISSING,
+
+	// Code when the player does not exist
+	VOCAL_CLIENT__SET__VOLUME__PLAYER_NOT_FOUND,
+
+	// Code when the volume is missing
+	VOCAL_CLIENT__SET__VOLUME__VOLUME_IS_MISSING,
+
+	// Code when the volume has a bad format
+	VOCAL_CLIENT__SET__VOLUME__VOLUME_BAD_FORMAT,
+
+	// Code when the volume is out of range
+	VOCAL_CLIENT__SET__VOLUME__VOLUME_OUT_OF_RANGE,
+
+	// Code when the volume has been updated
+	VOCAL_CLIENT__SET__VOLUME__VOLUME_UPDATED,
 
 	// Code for the "vocal details" command -------------------------------------------------------
 	VOCAL_CLIENT__DETAILS__EXPLANATION,

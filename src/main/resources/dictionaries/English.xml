@@ -195,6 +195,34 @@
 			<value>%s is no more deafen</value>
 		</message>
 		<message>
+			<code>VOCAL_CLIENT__SET__VOLUME__EXPLANATION</code>
+			<value>To set the audio volume of a player</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__VOLUME__NAME_IS_MISSING</code>
+			<value>Cannot set the audio volume of a player, the player name is missing</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__VOLUME__PLAYER_NOT_FOUND</code>
+			<value>Cannot set the audio volume of %s, the player does not exist</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__VOLUME__VOLUME_IS_MISSING</code>
+			<value>Cannot set the audio volume of %s, the audio volume is missing</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__VOLUME__VOLUME_BAD_FORMAT</code>
+			<value>Cannot set the audio volume of %s, the audio volume has a bad format, a integer value is expected</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__VOLUME__VOLUME_OUT_OF_RANGE</code>
+			<value>Cannot set the audio volume of %s, the audio volume must be in range [0%, 200%]</value>
+		</message>
+		<message>
+			<code>VOCAL_CLIENT__SET__VOLUME__VOLUME_UPDATED</code>
+			<value>The audio volume of %s, is now %s%%</value>
+		</message>
+		<message>
 			<code>VOCAL_CLIENT__DETAILS__EXPLANATION</code>
 			<value>To display the characteristics of a vocal server</value>
 		</message>

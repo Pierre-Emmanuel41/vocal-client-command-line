@@ -8,6 +8,7 @@ public class SetNode extends VocalClientNode {
 	private SetNameNode nameNode;
 	private SetMuteNode muteNode;
 	private SetDeafenNode deafenNode;
+	private SetVolumeNode volumeNode;
 
 	/**
 	 * Creates a node in order to modify the properties of the players.
@@ -20,6 +21,7 @@ public class SetNode extends VocalClientNode {
 		add(nameNode = new SetNameNode(server));
 		add(muteNode = new SetMuteNode(server));
 		add(deafenNode = new SetDeafenNode(server));
+		add(volumeNode = new SetVolumeNode(server));
 	}
 
 	/**
@@ -41,5 +43,12 @@ public class SetNode extends VocalClientNode {
 	 */
 	public SetDeafenNode getDeafenNode() {
 		return deafenNode;
+	}
+
+	/**
+	 * @return Set the audio volume of a player.
+	 */
+	public SetVolumeNode getVolumeNode() {
+		return volumeNode;
 	}
 }
