@@ -46,7 +46,7 @@ public class SetNode extends VocalClientNode {
 	}
 
 	/**
-	 * @return Set the audio volume of a player.
+	 * @return The node that set the audio volume of a player.
 	 */
 	public SetVolumeNode getVolumeNode() {
 		return volumeNode;
