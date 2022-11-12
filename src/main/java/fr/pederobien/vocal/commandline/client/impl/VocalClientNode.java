@@ -3,8 +3,8 @@ package fr.pederobien.vocal.commandline.client.impl;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import fr.pederobien.commandline.CommandLineNode;
-import fr.pederobien.commandline.ICode;
+import fr.pederobien.commandline.impl.CommandLineNode;
+import fr.pederobien.dictionary.interfaces.ICode;
 import fr.pederobien.vocal.client.interfaces.IVocalServer;
 
 public class VocalClientNode extends CommandLineNode {

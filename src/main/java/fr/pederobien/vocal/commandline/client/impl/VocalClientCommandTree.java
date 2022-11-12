@@ -3,12 +3,12 @@ package fr.pederobien.vocal.commandline.client.impl;
 import java.util.Locale;
 import java.util.function.Consumer;
 
-import fr.pederobien.commandline.CommandLineDictionaryContext;
-import fr.pederobien.commandline.ICode;
+import fr.pederobien.commandline.impl.CommandLineDictionaryContext;
 import fr.pederobien.commandtree.impl.CommandRootNode;
 import fr.pederobien.commandtree.interfaces.ICommandRootNode;
 import fr.pederobien.commandtree.interfaces.INode;
 import fr.pederobien.dictionary.impl.MessageEvent;
+import fr.pederobien.dictionary.interfaces.ICode;
 import fr.pederobien.utils.AsyncConsole;
 import fr.pederobien.vocal.client.interfaces.IVocalServer;
 
@@ -25,7 +25,7 @@ public class VocalClientCommandTree {
 	public VocalClientCommandTree() {
 		Consumer<INode<ICode>> displayer = node -> {
 			String label = node.getLabel();
-			String explanation = CommandLineDictionaryContext.instance().getMessage(new MessageEvent(Locale.getDefault(), node.getExplanation().toString()));
+			String explanation = CommandLineDictionaryContext.instance().getMessage(new MessageEvent(Locale.getDefault(), node.getExplanation()));
 			AsyncConsole.println(String.format("%s - %s", label, explanation));
 		};
 
